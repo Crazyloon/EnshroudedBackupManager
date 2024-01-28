@@ -13,7 +13,7 @@ The app will load with these paths set, with the world files defaulting to the f
 
 **I take no responsibility for your actions when using this tool.**
 
-### Where are my saved Files?
+## Where are my saved Files?
 If you have Steam cloud saves ON (This is the default), your files will be in: `C:\Program Files (x86)\Steam\userdata\YOUR_USER_ID\1203620\remote`
 
 If you want to manage your files locally (recommended).
