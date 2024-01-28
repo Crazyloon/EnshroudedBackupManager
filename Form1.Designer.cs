@@ -49,6 +49,8 @@ partial class frmEnshroudedBackupManager
         fbdCharacterBackupDir = new FolderBrowserDialog();
         ofdSelectWorldFiles = new OpenFileDialog();
         fbdWorldBackupDir = new FolderBrowserDialog();
+        rtbActionLog = new RichTextBox();
+        label5 = new Label();
         SuspendLayout();
         // 
         // btnCharFile
@@ -76,6 +78,7 @@ partial class frmEnshroudedBackupManager
         txtCharFile.Name = "txtCharFile";
         txtCharFile.Size = new Size(420, 25);
         txtCharFile.TabIndex = 1;
+        txtCharFile.Leave += txtCharFile_Leave;
         // 
         // label1
         // 
@@ -107,6 +110,7 @@ partial class frmEnshroudedBackupManager
         txtWorldFiles.Name = "txtWorldFiles";
         txtWorldFiles.Size = new Size(420, 25);
         txtWorldFiles.TabIndex = 4;
+        txtWorldFiles.Leave += txtCharFile_Leave;
         // 
         // btnWorldFiles
         // 
@@ -158,6 +162,7 @@ partial class frmEnshroudedBackupManager
         txtCharBackupDir.Name = "txtCharBackupDir";
         txtCharBackupDir.Size = new Size(420, 25);
         txtCharBackupDir.TabIndex = 8;
+        txtCharBackupDir.Leave += txtCharFile_Leave;
         // 
         // btnCharDir
         // 
@@ -194,6 +199,7 @@ partial class frmEnshroudedBackupManager
         txtWorldBackupDir.Name = "txtWorldBackupDir";
         txtWorldBackupDir.Size = new Size(420, 25);
         txtWorldBackupDir.TabIndex = 11;
+        txtWorldBackupDir.Leave += txtCharFile_Leave;
         // 
         // btnWorldBackupDir
         // 
@@ -270,12 +276,36 @@ partial class frmEnshroudedBackupManager
         // 
         fbdWorldBackupDir.InitialDirectory = "C:\\Users\\russd\\Saved Games\\Enshrouded\\wbRealWorld";
         // 
+        // rtbActionLog
+        // 
+        rtbActionLog.BackColor = Color.FromArgb(10, 42, 73);
+        rtbActionLog.BorderStyle = BorderStyle.None;
+        rtbActionLog.ForeColor = SystemColors.Window;
+        rtbActionLog.Location = new Point(25, 614);
+        rtbActionLog.Name = "rtbActionLog";
+        rtbActionLog.ReadOnly = true;
+        rtbActionLog.Size = new Size(421, 111);
+        rtbActionLog.TabIndex = 16;
+        rtbActionLog.Text = "";
+        // 
+        // label5
+        // 
+        label5.AutoSize = true;
+        label5.ForeColor = SystemColors.Control;
+        label5.Location = new Point(25, 596);
+        label5.Name = "label5";
+        label5.Size = new Size(70, 15);
+        label5.TabIndex = 17;
+        label5.Text = "Action Logs";
+        // 
         // frmEnshroudedBackupManager
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.FromArgb(0, 0, 18);
-        ClientSize = new Size(471, 602);
+        ClientSize = new Size(471, 746);
+        Controls.Add(label5);
+        Controls.Add(rtbActionLog);
         Controls.Add(btnRestoreWorld);
         Controls.Add(btnRestoreCharacter);
         Controls.Add(btnBackupWorld);
@@ -322,4 +352,6 @@ partial class frmEnshroudedBackupManager
     private FolderBrowserDialog fbdCharacterBackupDir;
     private OpenFileDialog ofdSelectWorldFiles;
     private FolderBrowserDialog fbdWorldBackupDir;
+    private RichTextBox rtbActionLog;
+    private Label label5;
 }
