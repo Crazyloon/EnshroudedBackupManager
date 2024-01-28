@@ -6,7 +6,7 @@ By default, Steam Cloud Saves are turned on. The default values on startup assum
 
 The app will load with these paths set, with the world files defaulting to the files based on Slot 1
 
-![image](https://github.com/Crazyloon/EnshroudedBackupManager/assets/8146917/74b645f8-f869-4519-a109-ef16e96507c5)
+![image](https://github.com/Crazyloon/EnshroudedBackupManager/assets/8146917/e3d353e8-1bcd-4afc-ae95-12144f0e17b9)
 
 ## Dangers
 **You must be absolutely sure you are pressing the correct button when backing up and restoring files. If you back up a file 10 hours ago, and reload it, any progress since then will be overwritten. Be careful! It's very easy to click the wrong button at the wrong time.**
